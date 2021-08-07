@@ -1,0 +1,14 @@
+2
+Quiz Testowy
+d
+ile to 2+2
+1
+3
+6
+4
+b
+czy quiz się podobał?
+nie
+tak
+nie wiem
+może

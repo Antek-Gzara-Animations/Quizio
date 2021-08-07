@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p style="text-align: center; margin-top: 15%; font-size: 50px;" id="text">Loading...<br> 0%</p>
+
+    <script>
+      var progress = 0;
+
+      var interval = setInterval(load,600);
+      
+      
+
+      function load(){
+        var text = document.getElementById("text");
+
+        switch(progress){
+          case 1:
+            text.innerHTML = "Loading...<br> 15%";
+          break;
+          case 2:
+            text.innerHTML = "Loading...<br> 32%";
+          break;
+          case 3:
+            text.innerHTML = "Loading...<br> 67%";
+          break;
+          case 4:
+            text.innerHTML = "Loading...<br> 99%";
+            window.location.href = "test";
+          break;
+        }
+        progress = progress + 1;
+      }
+    </script>
+  </body>
+</html>
